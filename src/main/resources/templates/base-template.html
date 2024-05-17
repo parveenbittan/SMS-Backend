@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+
+  <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Sample</title>
+  <meta name="description" content=""/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!-- all CSS links here -->
+</head>
+
+
+<body>
+<div class="container">
+  <div class="content">
+    <div layout:fragment="page_content">
+      <!-- Content from other pages which decorate using this template -->
+    </div>
+  </div>
+</div>
+
+<!-- /.container -->
+<!-- All script tags here -->
+
+<th:block layout:fragment="scripts">
+  <!-- If you have any page specific scripts -->
+</th:block>
+</body>
+</html>
